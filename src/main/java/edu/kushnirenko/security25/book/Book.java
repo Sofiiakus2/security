@@ -1,4 +1,4 @@
-package edu.kushnirenko.security25.item;
+package edu.kushnirenko.security25.book;
 
 import lombok.*;
 import org.springframework.data.annotation.Id;

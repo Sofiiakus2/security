@@ -1,4 +1,4 @@
-package edu.kushnirenko.security25.item;
+package edu.kushnirenko.security25.book;
 
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;

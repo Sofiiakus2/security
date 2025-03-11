@@ -1,4 +1,4 @@
-package edu.kushnirenko.security25.item;
+package edu.kushnirenko.security25.book;
 
 import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;

@@ -1,4 +1,4 @@
-package edu.kushnirenko.security25.item;
+package edu.kushnirenko.security25.book;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
