@@ -1,36 +1,36 @@
 ### GET all
-GET http://localhost:8080/api/v1/items
+GET http://localhost:8080/api/v1/books
 
 ###GET ONE
-GET http://localhost:8080/api/v1/items/2
+GET http://localhost:8080/api/v1/books/2
 
 ###DELETE ONE
-DELETE http://localhost:8080/api/v1/items/3
+DELETE http://localhost:8080/api/v1/books/3
 
 ###CREATE ONE
-POST http://localhost:8080/api/v1/items
+POST http://localhost:8080/api/v1/books
 Content-Type: application/json
 
 {
-  "name": "name4",
+  "name": "Harry Potter",
   "description": "d4"
 }
 
 ###UPDATE ONE
-PUT http://localhost:8080/api/v1/items
+PUT http://localhost:8080/api/v1/books
 Content-Type: application/json
 
 {
-  "id": "22",
-  "name": "name42",
+  "id": "1",
+  "name": "Harry Potter 2",
   "description": "d42"
 }
 
 ###HELLO USER
-GET http://localhost:8080/api/v1/items/user
+GET http://localhost:8080/api/v1/books/user
 
 ###HELLO ADMIN
-GET http://localhost:8080/api/v1/items/admin
+GET http://localhost:8080/api/v1/books/admin
 
 ###HELLO UNKNOWN
-GET http://localhost:8080/api/v1/items/unknown
+GET http://localhost:8080/api/v1/books/unknown

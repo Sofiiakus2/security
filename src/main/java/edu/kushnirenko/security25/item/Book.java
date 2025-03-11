@@ -19,21 +19,21 @@ import java.util.Objects;
 @AllArgsConstructor
 @ToString
 @Builder
-public class Item {
+public class Book {
     @Id
     private String id;
     private String name;
-    private String description;
+    private String anotation;
 
-    public Item(String name, String description) {
+    public Book(String name, String description) {
         this.name = name;
-        this.description = description;
+        this.anotation = description;
     }
 
     @Override
     public boolean equals(Object o) {
         if (o == null || getClass() != o.getClass()) return false;
-        Item item = (Item) o;
+        Book item = (Book) o;
         return Objects.equals(id, item.id);
     }
 

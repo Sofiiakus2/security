@@ -13,18 +13,18 @@ import java.util.List;
   @since 10.03.2025 - 20.12
 */
 @RestController
-@RequestMapping("/api/v1/items")
+@RequestMapping("/api/v1/books")
 @AllArgsConstructor
-public class ItemRestController {
-    private ItemService service;
+public class BookRestController {
+    private BookService service;
 
     @GetMapping
-    public List<Item> getItems() {
+    public List<Book> getItems() {
         return service.getAll();
     }
 
     @GetMapping("/{id}")
-    public Item getOneItem(@PathVariable String id) {
+    public Book getOneItem(@PathVariable String id) {
         return service.getById(id);
     }
 
@@ -34,12 +34,12 @@ public class ItemRestController {
     }
 
     @PostMapping
-    public Item create(@RequestBody Item item) {
+    public Book create(@RequestBody Book item) {
         return  service.create(item);
     }
 
     @PutMapping
-    public Item update(@RequestBody Item item) {
+    public Book update(@RequestBody Book item) {
         return service.update(item);
     }
 
